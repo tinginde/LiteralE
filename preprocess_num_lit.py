@@ -12,7 +12,7 @@ parser.add_argument('--dataset', default='YAGO3-10', metavar='',
                     help='which dataset in {`YAGO3-10`, `FB15k`, `FB15k-237`} to be used? (default: YAGO3-10)')
 args = parser.parse_args()
 
-
+'''freebase id convert to numeric id''' 
 # Load vocab
 vocab = np.load(f'{str(Path.home())}/.data/{args.dataset}/vocab_e1', allow_pickle=True)
 
